@@ -1,15 +1,15 @@
-import java.util.Scanner;
+import java.util.Scanner;// Importing Scanner for user input
 
-    public class Main() {
-        private Main library;
+//main application class
+    public class Main {
+        private Main library;// Instance variable to store the music library
     
-
-    public  Main() {
-         library = new MusicLibrary(); // Initialize music library
+    public  Main() { // Creating a new instance of Main
+         library = new Main(); // Initialize music library
     }
 
     public static void main(String[] args) {
-        Main app = new Main();
+        Main app = new Main(); // Creating an instance of Main to access MusicLibrary
         Scanner scanner = new Scanner(System.in);
 
         // Adding sample songs
@@ -25,6 +25,11 @@ import java.util.Scanner;
             System.out.println("3. Print all songs");
             System.out.println("5. Exit");
             System.out.print("Choose an option: ");
+
+             // Reading user choice
+             int choice = scanner.nextInt(); // Read user input as an integer
+             scanner.nextLine(); // Consume the newline character
+ 
 
             switch (choice) {
                 case 1:
