@@ -26,5 +26,15 @@ public class Main {
         System.out.println("Song not found.");
 
     }
+    public void printAllSongs() {
+        if (songs.isEmpty()) {
+            System.out.println("No songs in the list.");
+            return;
+        }
+        for (Song song : songs) {
+            System.out.println(song);
+        }
+    }
+    }
 
-}
+
