@@ -21,5 +21,9 @@ public String getArtist() {
 public int getPlayCount() {
     return playCount;   // Returns number of times song has been played
 }
+   // Method to return a string  of the song details
+public String toString() {
+    return "Title: " + title + ", Artist: " + artist + ", Plays: " + playCount;
+}
 
 }
