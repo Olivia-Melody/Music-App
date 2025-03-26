@@ -3,8 +3,12 @@ import java.util.Iterator;   // Imports Iterator to remove songs from the list
 import java.util.List;       // Imports List (superclass of ArrayList)
 import java.util.Scanner;    // Imports Scanner class to take user input
 
-public class Main {
+public class MusicLibrary {
     private List<Song> songs; // Create a list to store songs
+
+    public MusicLibrary() {
+        songs = new ArrayList<>();
+    }
 
      // Method to add a new song to the list
      public void addSong(String title, String artist, int playCount) { //void as the method does not return a value
@@ -24,7 +28,6 @@ public class Main {
             }
         }
         System.out.println("Song not found.");
-
     }
     public void printAllSongs() {
         if (songs.isEmpty()) {
@@ -35,6 +38,6 @@ public class Main {
             System.out.println(song);
         }
     }
-    }
+}
 
 

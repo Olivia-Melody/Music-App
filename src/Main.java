@@ -1,19 +1,8 @@
-import java.util.ArrayList;  // Imports an ArrayList class to store a list of songs
-import java.util.Iterator;   // Imports Iterator to remove songs from the list
-import java.util.List;       // Imports List (superclass of ArrayList)
-import java.util.Scanner;    // Imports Scanner class to take user input
+import java.util.Scanner;
 
-public class Main {
-    private List<Song> songs; // Create a list to store songs
+public class MusicLibrary {
+    private MusicLibrary library; // Use MusicLibrary instead of storing songs directly
 
-     // Method to add a new song to the list
-     public void addSong(String title, String artist, int playCount) { //void as the method does not return a value
-        songs.add(new Song(title, artist, playCount)); // Creates and adds a new Song object
-        System.out.println("Song added successfully."); 
-     }
-
-    // Method to remove a song by title
-    public void removeSong(String title) {
-        Iterator<Song> iterator = songs.iterator();  // Creates an iterator for safe removal
+    public MusicStreamingApp() {
+        library = new MusicLibrary(); // Initialize music library
     }
-}
