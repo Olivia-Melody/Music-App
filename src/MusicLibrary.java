@@ -10,10 +10,15 @@ public class MusicLibrary {
         songs = new ArrayList<>();  // Create a new empty list of songs
     }
 
-     // Method to add a new song to the list
+     // Method to add a new song to the list(user addition)
      public void addSong(String title, String artist, int playCount) { //void as the method does not return a value
         songs.add(new Song(title, artist, playCount)); // // Add new song to the list
         System.out.println("Song added successfully."); 
+     }
+
+     // Method to add to the original set of songs to the list
+     public void addoriginalSong(String title, String artist, int playCount) { //void as the method does not return a value
+        songs.add(new Song(title, artist, playCount)); // // Add new song to the list 
      }
 
     // Method to remove a song by title
