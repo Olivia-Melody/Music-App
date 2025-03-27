@@ -13,16 +13,16 @@ import java.util.Scanner;//  Scanner for user inputs
         Scanner scanner = new Scanner(System.in); // Scanner to a read users input
 
         // Adding original set of songs 
-        app.library.addoriginalSong("Song A", "Artist X", 120);
-        app.library.addoriginalSong("Song B", "Artist Y", 85);
-        app.library.addoriginalSong("Song C", "Artist Z", 300);
-        app.library.addoriginalSong("Song D", "Artist X", 150);
-        app.library.addoriginalSong("Song E", "Artist X", 120);
-        app.library.addoriginalSong("Song F", "Artist Y", 85);
-        app.library.addoriginalSong("Song G", "Artist Z", 300);
-        app.library.addoriginalSong("Song H", "Artist X", 150);
-        app.library.addoriginalSong("Song I", "Artist X", 120);
-        app.library.addoriginalSong("Song J", "Artist Y", 85);
+        app.library.addoriginalSong("Irreplaceable", "Beyonce", 2567800);
+        app.library.addoriginalSong("One Last Time", "Ariana Grande", 2023400);
+        app.library.addoriginalSong("Fancy", "Drake", 1890100);
+        app.library.addoriginalSong("Love Yourz", "J Cole", 556780);
+        app.library.addoriginalSong("Break From Toronto", "Party Next Door", 223450);
+        app.library.addoriginalSong("Time Flies", "Drake", 100456);
+        app.library.addoriginalSong("Imagine", "Ariana Grande", 50300);
+        app.library.addoriginalSong("Be MY Baby", "Ariana Grande", 10250);
+        app.library.addoriginalSong("Monopoly", "Victoria Monet", 8123);
+        app.library.addoriginalSong("Chicago", "Michael Jackson", 4321);
 
 // Infinite loop to display a menu until it is used
         while (true) { //menu options:
