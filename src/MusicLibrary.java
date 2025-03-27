@@ -59,6 +59,24 @@ public class MusicLibrary {
             System.out.println("No songs found with more than " + playCount + " plays.");
         }
     }
-}
+
+    //Method to print songs by artist 
+    public void PrintByArtist(String artist) {//artistname is a parameter
+        boolean found = false;
+         // Iterate through the songs list
+    for (Song song : songs) { 
+        // Check if the artist matches (case-insensitive)
+        if (song.getArtist().equalsIgnoreCase(artist)) { 
+            System.out.println("Songs by: " + artist);
+            System.out.println(song); // Print the song details
+            found = true; // found is true if song is found
+
+           // If no song is found for the artist
+    if (!found) { 
+        System.out.println("No songs found for artist: " + artist);
+    }
+        }
+    }
+}}
 
 
