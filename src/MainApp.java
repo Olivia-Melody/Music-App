@@ -31,7 +31,8 @@ import java.util.Scanner;//  Scanner for user inputs
             System.out.println("2. Remove a song");
             System.out.println("3. Print all songs");
             System.out.println("4. Print songs with  a certain play count");
-            System.out.println("5. Exit");
+            System.out.println("5. Print songs from a certain Artist ");
+            System.out.println("6. Exit");
             System.out.print("Choose an option: ");
 
              // Reading user choice
@@ -56,27 +57,34 @@ import java.util.Scanner;//  Scanner for user inputs
                     String removeTitle = scanner.nextLine();
                     app.library.removeSong(removeTitle); // Remove the song from the library
             }
-                else if (choice ==2)  {
+                else if (choice ==3)  {
                      // Print all songs in the library
                     app.library.printAllSongs(); 
             }
                     // Print songs with plays over a certain count
-                else if (choice == 3)  {
-                    System.out.print("Enter minimum play count: "); // Read the minimum play count
-                    int minPlays = scanner.nextInt();
+                else if (choice == 4)  {
+                    System.out.print("Enter minimum play count: "); 
+                    int minPlays = scanner.nextInt();// Read the minimum play count
                     scanner.nextLine();
                     app.library.PlayCount(minPlays); // Print songs with count filter
             }
+                // print a specified artists songs
+                else if (choice == 5) {
+                    System.out.print("Enter artists name : "); // Read the artist name
+                    String artist = scanner.nextLine();//taking user input
+                    app.library.PrintByArtist(artist); //calling method
+                }
                      // Exit the application
-                else if (choice == 4)  {
+                else if (choice == 6)  {
                     System.out.println("Exiting application.");
                     scanner.close();// Exit the while loop terminating the program
                 }
                 else {// Handling invalid inputs
                     System.out.println("Invalid choice. Please try again.");
             }
-        
         }
+        
+        
     }}
 
 
