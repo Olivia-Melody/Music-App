@@ -66,7 +66,7 @@ import java.util.Scanner;//  Scanner for user inputs
                     System.out.print("Enter minimum play count: "); // Read the minimum play count
                     int minPlays = scanner.nextInt();
                     scanner.nextLine();
-                    app.library.printSongsOverPlayCount(minPlays); // Print songs with count filter
+                    app.library.PlayCount(minPlays); // Print songs with count filter
                     break;
                      // Exit the application
                 case 5:
