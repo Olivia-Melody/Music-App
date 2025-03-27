@@ -5,9 +5,9 @@ public class Song { // private fields to store the details of the song
 
 
 public Song(String title, String artist, int playCount) { //adds song properties when a song is added
-    this.title = title;      // Assigns title from parameter to instance variable
-    this.artist = artist;    // Assigns artist name from parameter to instance variable
-    this.playCount = playCount; // Assigns play count from parameter to instance variable
+    this.title = title;      //  Set the title of the song
+    this.artist = artist;    //  Set the artist of the song
+    this.playCount = playCount; //Set the play count of the song
 }
 //getter methods to provide access to the song detail fields
 public String getTitle() {
