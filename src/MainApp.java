@@ -12,17 +12,17 @@ import java.util.Scanner;//  Scanner for user inputs
         MainApp app = new MainApp(); // Creating an instance of the app 
         Scanner scanner = new Scanner(System.in); // Scanner to a read users input
 
-        // Adding sample songs (to be updated)
-        app.library.addSong("Song A", "Artist X", 120);
-        app.library.addSong("Song B", "Artist Y", 85);
-        app.library.addSong("Song C", "Artist Z", 300);
-        app.library.addSong("Song D", "Artist X", 150);
-        app.library.addSong("Song E", "Artist X", 120);
-        app.library.addSong("Song F", "Artist Y", 85);
-        app.library.addSong("Song G", "Artist Z", 300);
-        app.library.addSong("Song H", "Artist X", 150);
-        app.library.addSong("Song I", "Artist X", 120);
-        app.library.addSong("Song J", "Artist Y", 85);
+        // Adding original set of songs 
+        app.library.addoriginalSong("Song A", "Artist X", 120);
+        app.library.addoriginalSong("Song B", "Artist Y", 85);
+        app.library.addoriginalSong("Song C", "Artist Z", 300);
+        app.library.addoriginalSong("Song D", "Artist X", 150);
+        app.library.addoriginalSong("Song E", "Artist X", 120);
+        app.library.addoriginalSong("Song F", "Artist Y", 85);
+        app.library.addoriginalSong("Song G", "Artist Z", 300);
+        app.library.addoriginalSong("Song H", "Artist X", 150);
+        app.library.addoriginalSong("Song I", "Artist X", 120);
+        app.library.addoriginalSong("Song J", "Artist Y", 85);
 
 // Infinite loop to display a menu until it is used
         while (true) { //menu options:
@@ -48,7 +48,7 @@ import java.util.Scanner;//  Scanner for user inputs
                     System.out.print("Enter play count: ");// Read play count
                     int playCount = scanner.nextInt();
                     scanner.nextLine();  
-                    app.library.addSong(title, artist, playCount);// Add the song to the library
+                    app.library.addSong(title, artist, playCount);// Add the song to the library 
             }
                     // Remove a song
                 else if (choice == 2) {
